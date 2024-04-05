@@ -32,7 +32,7 @@ def md5_hash_text_chunks(text_chunks):
         md5_hash.update(chunk_hash.encode())
     return md5_hash.hexdigest()
 
-#checking if the hash already exists in the databse
+#checking if the hash already exists in the database
 def check_if_exists(hash_value):
     db = create_db_connection()
     cursor = db.cursor()
